@@ -1,0 +1,6 @@
+.control__switch-btn_state_on {
+    background: #118c4e;
+  }
+.control__switch-btn_state_on::after {
+    left: 37px;
+  }

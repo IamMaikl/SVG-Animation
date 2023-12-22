@@ -1,0 +1,70 @@
+@keyframes transport {
+    0% {
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dashoffset: -1000;
+    }
+}
+
+.svga-transp {
+    animation: transport 30s linear infinite;
+}
+
+.svga-transp-stop {
+    animation-play-state: paused;
+    fill: #FFFFFF;
+}
+
+
+.svg {
+    width: 400px;
+    height: 300px;
+    border: 1px solid #000;
+}
+
+.svga {
+    width: 368px;
+    overflow: visible;
+}
+
+
+
+.text {
+    font-size: 24px;
+    fill: #000;
+}
+
+.rect {
+    stroke: aqua;
+    stroke-width: 10px;
+    fill: none;
+    stroke-dasharray: 700;
+    stroke-dashoffset: 700;
+    transition: all 1s ease-in-out;
+}
+
+.circle {
+    transition: all 1s ease-in-out;
+    stroke-dasharray: 314;
+    stroke-dashoffset: 314;
+}
+
+.svg-rect:hover .rect,
+.svg-circle:hover .circle {
+    stroke-dashoffset: 0;
+}
+
+.transport {
+    display: flex;
+    justify-content: center;
+}
+
+.Btn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-left: 30px;
+}
